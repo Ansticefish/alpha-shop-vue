@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: $main-background;
+  @include font-style;
+}
+
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: $main-color;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: $input-color;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: $input-color;
+}
+
+nav img,
+footer img {
+  @include image-size;
+  cursor: pointer;
+}
+

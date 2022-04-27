@@ -1,0 +1,219 @@
+// general color
+$main-background: var(--background-color);
+$main-font: 'Noto Sans TC',
+sans-serif;
+$main-color: var(--main-color);
+// nav border
+$nav-border: var(--nav-border);
+// image links
+$logo-image: var(--logo-image);
+$search-image: var(--search-image);
+$cart-image: var(--cart-image);
+$moon-image: var(--moon-image);
+$next-arrow: var(--next-arrow);
+$previous-arrow: var(--previous-arrow);
+// stepper color
+$step-undone: var(--step-undone);
+$progress-undone: var(--progress-undone);
+$step-active: var(--step-active);
+$progress-active: var(--progress-active);
+$circle-one-active: var(--circle-one-active);
+$number-one-active: var(--number-one-active);
+$step-done: var(--step-done);
+$number-done: var(--number-done);
+$progress-done: var(--progress-done);
+$circle-done: var(--circle-done);
+// form color
+$input-border: var(--input-border);
+$input-color: var(--input-color);
+$label-color: var(--label-color);
+$radio-border-unchecked: var(--radio-border-unchecked);
+$radio-border-checked: var(--radio-border-checked);
+$radio-circle-unchecked-border: var(--radio-circle-unchecked-border);
+$radio-circle-unchecked-bg: var(--radio-circle-unchecked-bg);
+$radio-circle-checked-border: var(--radio-circle-checked-border);
+$radio-circle-checked-bg: var(--radio-circle-checked-bg);
+$radio-color: var(--radio-color);
+$radio-sub-color: var(--radio-sub-color);
+// button color
+$buttons-border: var(--buttons-border);
+$next-bg: var(--next-bg);
+$next-color: var(--next-color);
+$previous-color: var(--previous-color);
+// cart color
+$cart-border: var(--cart-border);
+$cart-bg: var(--cart-bg);
+$cart-light-color: var(--cart-light-color);
+$cart-heavy-color: var(--cart-heavy-color);
+$amount-circle: var(--amount-circle);
+// footer color
+$footer-background: var(--footer-background);
+$footer-title: var(--footer-title);
+$footer-color: var(--footer-color);
+
+:root {
+  // general color
+  --background-color: #ffffff;
+  --main-color: #2a2a2a;
+  // nav
+  --nav-border: #2a2a2a33;
+  // image links
+  --logo-image: url("~@/assets/images/Logo.png");
+  --search-image: url("~@/assets/images/search.png");
+  --cart-image: url("~@/assets/images/cart.png");
+  --moon-image: url("~@/assets/images/moon.png");
+  --next-arrow: url("~@/assets/images/next.png");
+  --previous-arrow: url("~@/assets/images/previous.png");
+  // stepper color
+  --step-undone: #AFB1BD;
+  --progress-undone: #F0F0F5;
+  --step-active: #2A2A2A;
+  --progress-active: #000000;
+  --circle-one-active: #2A2A2A;
+  --number-one-active: #FFFFFF;
+  --step-done: #2A2A2A;
+  --number-done: #FFFFFF;
+  --progress-done: #000000;
+  --circle-done: #333333;
+  // form color
+  --input-border: #4A4A4A;
+  --input-color: #999999;
+  --label-color: #808080;
+  --radio-border-unchecked: #F0F0F5;
+  --radio-border-checked: #2A2A2A;
+  --radio-circle-unchecked-border: #222222;
+  --radio-circle-unchecked-bg: #FFFFFF;
+  --radio-circle-checked-border: #000000;
+  --radio-circle-checked-bg: #FFFFFF;
+  --radio-color: #000000;
+  --radio-sub-color: #000000;
+  // button color
+  --buttons-border: #E6E6EB;
+  --next-bg: #F67599;
+  --next-color: #FFFFFF;
+  --previous-color: #000000;
+  // cart color
+  --cart-border: #F0F0F5;
+  --cart-bg: #FFFFFF;
+  --cart-light-color: #2A2A2A;
+  --cart-heavy-color: #000000;
+  --amount-circle: #F0F0F5;
+  // footer color
+  --footer-background: #F6F7F8;
+  --footer-title: #2A2A2A;
+  --footer-color: #808080;
+}
+
+
+.dark-mode {
+  // general color
+  --background-color: #121212;
+  --main-color: #FFFFFF;
+  // nav
+  --nav-border: #FFFFFF;
+  // image links
+  --logo-image: url("~@/assets/images/dark_Logo.png");
+  --search-image: url("~@/assets/images/dark_search.png");
+  --cart-image: url("~@/assets/images/dark_cart.png");
+  --moon-image: url("~@/assets/images/dark_moon.png");
+  --next-arrow: url("~@/assets/images/next.png");
+  --previous-arrow: url("~@/assets/images/dark_previous.png");
+  // stepper color
+  --step-undone: #FFFFFF66;
+  --progress-undone: #F0F0F566;
+  --step-active: #FFFFFF;
+  --progress-active: #F0F0F5;
+  --circle-one-active: #333333;
+  --number-one-active: #FFFFFF;
+  --step-done: #FFFFFF;
+  --number-done: #FFFFFF;
+  --progress-done: #FFFFFF;
+  --circle-done: #333333;
+  // form color
+  --input-border: #5E5E5E;
+  --input-color: #FFFFFF66;
+  --label-color: #FFFFFF66;
+  --radio-border-unchecked: #5E5E5E;
+  --radio-border-checked: #FFFFFF;
+  --radio-circle-unchecked-border: #333333;
+  --radio-circle-unchecked-bg: #333333;
+  --radio-circle-checked-border:
+    #333333;
+  --radio-circle-checked-bg: #FFFFFF;
+  --radio-color: #FFFFFF;
+  --radio-sub-color: #FFFFFF66;
+  // button color
+  --buttons-border: #FFFFFF33;
+  --next-bg: #F67599;
+  --next-color: #FFFFFF;
+  --previous-color: #FFFFFF;
+  // cart color
+  --cart-border: #FFFFFF33;
+  --cart-bg: #383838;
+  --cart-light-color: #FFFFFF;
+  --cart-heavy-color: #FFFFFF;
+  --amount-circle: #F0F0F5;
+  // footer color
+  --footer-background: #333333;
+  --footer-title: #FFFFFF;
+  --footer-color: #FFFFFF99;
+}
+
+@mixin size($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font-style($font-size: 16px, $font-weight: normal, $color: $main-color) {
+  font-family: $main-font;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin image-size($width: 24px, $height: 24px) {
+  width: $width;
+  height: $height;
+  object-fit: contain;
+}
+
+@mixin background-image($link, $width:24px, $height:24px, $size: cover) {
+  width: $width;
+  height: $height;
+  background-image: $link;
+  background-size: $size;
+}
+
+@mixin border-style($color, $border-radius, $border-width: 1px) {
+  border: $border-width solid $color;
+  border-radius: $border-radius;
+}
+
+@mixin flex($direction: row, $justify-content: flex-start, $align-items: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin position-absolute($horizontal, $vertical, $value1, $value2) {
+  position: absolute;
+  #{$horizontal}: $value1;
+  #{$vertical}: $value2;
+}
+
+@mixin hide($method) {
+  @if $method==display {
+    display: none;
+  }
+
+  @else {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@mixin stepper-circle($background-color, $border-color) {
+  background-color: $background-color;
+  border: 1px solid $border-color;
+}
