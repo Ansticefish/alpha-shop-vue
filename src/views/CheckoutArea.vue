@@ -19,6 +19,7 @@
       v-show="currentStep === 3"
     />
 
+
     <Buttons class="buttons" 
       :initial-current-step="currentStep"
       @step-change="stepChange"
@@ -28,15 +29,13 @@
       :initial-products="products" 
       :shipment="shipment"
     />
-
   </form>
 
 </template>
-
+ 
 
 <script>
 import Stepper from '../components/Stepper.vue'
-// import FormWrapper from '../components/FormWrapper.vue'
 import Buttons from '../components/Buttons.vue'
 import Cart from '../components/Cart.vue'
 import { v4 as uuidv4 } from 'uuid'
@@ -95,16 +94,17 @@ export default {
     if (this.$route.params.id) {
       this.currentStep = Number(this.$route.params.id)
     }  
+
+    console.log('created')
     
   },
-  // beforeRouteUpdate (to, from) {
-  //   console.log(from)
-  //   console.log(to)
-  //   const id = Number(to.params.id)
-  //   console.log(id)
-  //   this.currentStep = id
-  //   console.log('beforeUpdate',this.currentStep)
-  // },
+  beforeRouteUpdate (to, from, next) {
+    console.log(to, from)
+    const id = Number(to.params.id)
+    this.currentStep = id
+    console.log('beforeUpdate',this.currentStep)
+    next()
+  },
   methods: {
     fetchProducts () {
       this.products = dummyProducts

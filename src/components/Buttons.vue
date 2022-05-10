@@ -5,7 +5,6 @@
     <router-link class="previous"
       :to="{name: 'current-step', params: { id: currentStep - 1}}"
       v-show="currentStep !== 1"
-      @click.native.prevent="toPreviousStep"
     >
       <div class="previous-arrow">        
       </div>
@@ -13,8 +12,7 @@
     </router-link>
     <router-link class="next"
       :to="{name: 'current-step', params: {id: currentStep + 1}}"
-      v-show="currentStep !== 3"
-      @click.native.prevent="toNextStep"
+      v-show="currentStep < 3 "
     >
       下一步
       <div class="next-arrow">
@@ -43,15 +41,15 @@ export default {
     }
   },
   methods: {
-    toNextStep () {
-      this.currentStep += 1
-      this.$emit('step-change', this.currentStep)
-    },
-    toPreviousStep () {
-      this.currentStep -= 1
-      this.$emit('step-change', this.currentStep)
+    watchStepChange () {
+      this.currentStep = this.initialCurrentStep      
     }
   },
+  watch: {
+    initialCurrentStep: {
+      handler: 'watchStepChange'
+    }
+  }
 }
 </script>
 

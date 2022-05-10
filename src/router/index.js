@@ -12,7 +12,21 @@ const routes = [
   {
     path: '/step',
     name: 'home',
-    component: CheckoutArea
+    component: CheckoutArea,
+    // children: [
+    //   {
+    //     path: '1',
+    //     component: () => import('../components/FormOne.vue')
+    //   },
+    //   {
+    //     path: '2',
+    //     component: () => import('../components/FormTwo.vue')
+    //   },
+    //   {
+    //     path: '3',
+    //     component: () => import('../components/FormThree.vue')
+    //   }
+    // ]
   },
   {
     path: '/step/:id',
